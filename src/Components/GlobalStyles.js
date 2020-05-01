@@ -49,11 +49,17 @@ const globalStyles = createGlobalStyle`
     font-size: 1rem;
     font-weight: 300;
     color: ${theme.color.black};
+    line-height: 1.2rem;
   }
 
   small {
     font-size: 0.8rem;
     font-weight: 300;
+    color: ${theme.color.grayD};
+  }
+
+  a {
+    text-decoration: none;
     color: ${theme.color.grayD};
   }
 
