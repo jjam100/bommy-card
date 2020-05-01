@@ -37,7 +37,7 @@ const Footer = (props) => (
       <a
         href="https://www.instagram.com/cat__bommy/"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
         id="instagram-link"
       >
         <i>@cat_bommy</i>
