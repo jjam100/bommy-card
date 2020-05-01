@@ -8,7 +8,7 @@ const theme = {
     white: "rgb(255,255,255)",
   },
   font: {
-    cdn: "//fonts.googleapis.com/earlyaccess/kopubbatang.css",
+    cdn: "http://fonts.googleapis.com/earlyaccess/kopubbatang.css",
     family: "'KoPub Batang', serif",
   },
 };
