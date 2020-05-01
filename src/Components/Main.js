@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { saveSvgAsPng } from "save-svg-as-png";
 
 import theme from "./theme";
 import ShareIcon from "./share.svg";
@@ -69,10 +70,17 @@ const Main = (props) => {
   const textCheck = (text) => {
     setCardText(text);
   };
+  const saveAsPNG = () => {
+    saveSvgAsPng(document.getElementById("bommy-card"), "bommy-card.png", {
+      scale: 5,
+      encoderOptions: 1,
+      backgroundColor: "white",
+    });
+  };
   return (
     <MainWrapper>
       <Card text={cardText} />
-      <ShareButton id="share-button">
+      <ShareButton onClick={saveAsPNG} id="share-button">
         <img src={ShareIcon} alt="share" />
       </ShareButton>
       <textarea

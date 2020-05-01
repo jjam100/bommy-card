@@ -92,6 +92,7 @@ const Card = (props) => (
     width="251"
     height="357.266"
     viewBox="0 0 251 357.266"
+    id="bommy-card"
   >
     <g transform="translate(-62 -206)">
       <g className="a" transform="translate(62 206)">
