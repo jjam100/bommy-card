@@ -78,6 +78,7 @@ const CardText = ({ text }) => {
           if (index < 5) {
             return <Tspan line={index + 1} text={text} />;
           } else {
+            return null;
             alert("5줄 안으로만 쓸 수 있습니다.");
           }
         })}
