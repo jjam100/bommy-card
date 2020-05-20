@@ -71,7 +71,8 @@ const Main = (props) => {
     setCardText(text);
   };
   const saveAsPNG = () => {
-    saveSvgAsPng(document.getElementById("bommy-card"), "bommy-card.png", {
+    const fileName = `bommy-card-${Date.now()}.png`;
+    saveSvgAsPng(document.getElementById("bommy-card"), fileName, {
       scale: 5,
       encoderOptions: 1,
       backgroundColor: "white",
