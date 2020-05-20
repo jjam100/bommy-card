@@ -51,7 +51,7 @@ const CardText = ({ text }) => {
   let textArray = (text + "").split("\n");
 
   const Tspan = ({ line, text }) => (
-    <tspan key={line} x="0" y={(line - 1) * 31}>
+    <tspan font-family="'KoPub Batang', serif" key={line} x="0" y={(line - 1) * 31}>
       {text}
     </tspan>
   );
