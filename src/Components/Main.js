@@ -71,7 +71,7 @@ const Main = (props) => {
     setCardText(text);
   };
   const saveAsPNG = () => {
-    console.log('저장하는데 시간이 소요될 수 있습니다!');
+    alert('저장하는데 시간이 소요될 수 있습니다!');
     const fileName = `bommy-card-${Date.now()}.png`;
     saveSvgAsPng(document.getElementById("bommy-card"), fileName, {
       scale: 5,
