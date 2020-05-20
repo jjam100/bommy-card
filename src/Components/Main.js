@@ -76,6 +76,22 @@ const Main = (props) => {
       scale: 5,
       encoderOptions: 1,
       backgroundColor: "white",
+      fonts: [{
+        url: '//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.ttf',
+        format: 'truetype',
+        text: `
+          @font-face {
+            font-family: 'KoPub Batang';
+            font-style: normal;
+            font-weight: 300;
+            src: url(//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.eot);
+            src: url(//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.eot?#iefix) format('embedded-opentype'),
+                url(//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.woff2) format('woff2'),
+                url(//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.woff) format('woff'),
+                url(//fonts.gstatic.com/ea/kopubbatang/v3/KoPubBatang-Light.ttf) format('truetype');
+          }
+        `
+      }]
     });
   };
   return (
